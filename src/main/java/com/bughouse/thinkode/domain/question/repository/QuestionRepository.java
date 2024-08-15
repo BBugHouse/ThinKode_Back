@@ -1,4 +1,4 @@
-package com.bughouse.thinkode.domain.question;
+package com.bughouse.thinkode.domain.question.repository;
 
 import com.bughouse.thinkode.domain.question.entity.QuestionEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;

@@ -1,6 +1,7 @@
-package com.bughouse.thinkode.domain.question;
+package com.bughouse.thinkode.domain.question.service;
 
 import com.bughouse.thinkode.domain.question.entity.QuestionEntity;
+import com.bughouse.thinkode.domain.question.repository.QuestionRepository;
 import com.bughouse.thinkode.domain.question.request.QuestionRequest;
 import com.bughouse.thinkode.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;

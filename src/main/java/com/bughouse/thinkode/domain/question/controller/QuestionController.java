@@ -1,5 +1,6 @@
-package com.bughouse.thinkode.domain.question;
+package com.bughouse.thinkode.domain.question.controller;
 
+import com.bughouse.thinkode.domain.question.service.QuestionService;
 import com.bughouse.thinkode.domain.question.entity.QuestionEntity;
 import com.bughouse.thinkode.domain.question.request.QuestionRequest;
 import com.bughouse.thinkode.exception.NotFoundException;
