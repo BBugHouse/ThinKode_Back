@@ -19,6 +19,10 @@ public class QuestionRequest {
 
     @NotNull
     @Valid
+    private List<IoEntity> test_ios;
+
+    @NotNull
+    @Valid
     private List<IoEntity> ios;
 
 }

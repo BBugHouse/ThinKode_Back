@@ -28,6 +28,7 @@ public class QuestionService {
         newQuestion.setName(question.getName());
         newQuestion.setContent(question.getContent());
         newQuestion.setIos(question.getIos());
+        newQuestion.setTest_ios(question.getTest_ios());
         questionRepository.save(newQuestion);
     }
 
@@ -39,6 +40,7 @@ public class QuestionService {
         updateQuestion.setName(question.getName());
         updateQuestion.setContent(question.getContent());
         updateQuestion.setIos(question.getIos());
+        updateQuestion.setTest_ios(question.getTest_ios());
         questionRepository.save(updateQuestion);
     }
 

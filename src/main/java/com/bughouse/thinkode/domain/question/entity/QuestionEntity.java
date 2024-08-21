@@ -28,4 +28,8 @@ public class QuestionEntity {
     @JsonSubTypes.Type(name = "io", value = IoEntity.class)
     private List<IoEntity> ios;
 
+    @NotNull
+    @Valid
+    private List<IoEntity> test_ios;
+
 }

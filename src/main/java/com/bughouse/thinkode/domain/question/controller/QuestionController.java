@@ -39,6 +39,7 @@ public class QuestionController {
             questionService.create(question);
             return ResponseEntity.ok("문제가 성공적으로 생성되었습니다.");
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -56,7 +57,7 @@ public class QuestionController {
     @DeleteMapping("/{questionId}")
     public ResponseEntity<String> deleteQuestion(@PathVariable String questionId) {
         try {
-            questionService.delete(questionId);
+            questionService.delete(questionId.trim());
             return ResponseEntity.ok("문제가 성공적으로 삭제되었습니다.");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
